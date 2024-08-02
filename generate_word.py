@@ -20,6 +20,7 @@ image_spacing = config['image_spacing']
 page_height = config['page_height']
 page_width = config['page_width']
 page_border_width = config['page_border_width']
+title_font_size = config['title_font_size']
 
 # 計算每頁最多圖片數量
 max_images_per_page = images_per_row * images_per_column
@@ -91,7 +92,7 @@ def add_image_frame(doc, title, image_paths, bAddpagebreak):
         title_cell.paragraphs[0].paragraph_format.space_after = Inches(0.01)  # 調整段落後間距
         title_cell.paragraphs[0].paragraph_format.space_before = Inches(0.01)  # 調整段落前間距        
         run.bold = True
-        run.font.size = Inches(0.3)
+        run.font.size = Inches(title_font_size)
 
 
         # 設置右側日期範圍單元格
@@ -102,7 +103,7 @@ def add_image_frame(doc, title, image_paths, bAddpagebreak):
                 
         run = date_cell.paragraphs[0].add_run(date_range_str)
         run.bold = True
-        run.font.size = Inches(0.3)
+        run.font.size = Inches(title_font_size)
         date_cell.paragraphs[0].paragraph_format.alignment = WD_ALIGN_PARAGRAPH.RIGHT
 
         # 插入一个空行并设置行高最小

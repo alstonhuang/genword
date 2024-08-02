@@ -6,5 +6,6 @@
   "image_spacing": 0,
   "page_width": 7,
   "page_height": 9,
-  "page_border_width": 0.5
+  "page_border_width": 0.5,
+  "title_font_size": 0.2
 }
