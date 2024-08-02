@@ -1,0 +1,10 @@
+{
+  "image_base_folder": "./Images",
+  "output_file": "./output.docx",
+  "images_per_row": 3,
+  "images_per_column": 3,
+  "image_spacing": 0,
+  "page_width": 7,
+  "page_height": 9,
+  "page_border_width": 0.5
+}
